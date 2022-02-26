@@ -29,7 +29,14 @@ namespace ConsoleRPG
 
         public void NormAttack(Person target)
         {
-            target.health -= attack;
+            Random r = new Random();
+            int randomDamage = r.Next(1, 11);
+            Console.WriteLine("random dmg: " + randomDamage);
+            target.health -= attack + randomDamage;
+            if (randomDamage >= 7)
+            {
+                Console.WriteLine("Uau! Você causou um dano crítico!");
+            }
         }
     }
 }

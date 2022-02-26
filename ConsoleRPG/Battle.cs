@@ -86,6 +86,13 @@ namespace ConsoleRPG
             Console.WriteLine("{0} foi morto!", dragon.name);
             Console.ReadLine();
             Console.Clear();
+
+            /*
+            Random r = new Random();
+            int randomDamage = r.Next(1, 11);
+            Console.WriteLine(randomDamage);
+            Console.ReadKey();
+            */
         }
     }
 }
